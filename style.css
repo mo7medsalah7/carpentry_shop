@@ -11,7 +11,10 @@ a {
   font-family: 'Tajawal', sans-serif;
 
 }
-nav a {
+nav {
+  margin: 0 auto;
+}
+nav ul li a {
   font-family: 'Tajawal', sans-serif;
   color: #fff;
 }
@@ -25,6 +28,9 @@ nav a {
 .swiper {
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 
 .swiper-slide {
