@@ -8,4 +8,7 @@ var swiper = new Swiper('.mySwiper', {
     prevEl: '.swiper-button-prev',
   },
   loop: true,
+  autoplay: {
+    delay: 3000,
+  },
 });
