@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <link>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Animate CSS  -->
+    <link
+    rel="stylesheet"
+    href="./animate.min.css"
+  />
+    <!-- Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- // adding some custom CSS -->
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css"> </link>
+  </head>
+  <body>
+    <!-- Header  -->
+    <header class="text-gray-600 body-font">
+      <div class="main-navigation sm:hidden md:flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <img src="./assets/logo.png" alt="logo.png" class="main_logo">
+          <span class="ml-3 text-xl font-bold	text-white">النجار</span>
+        </a>
+        <nav class="md:m-auto flex flex-wrap items-center text-base justify-center">
+          <a class="mr-5 hover:text-[#f7a145]">الرئيسية</a>
+          <a class="mr-5 hover:text-[#f7a145]">الخدمات</a>
+          <a class="mr-5 hover:text-[#f7a145]">الميزات</a>
+          <a class="mr-5 hover:text-[#f7a145]">من نحن</a>
+        </nav>
+        <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">اتصل بنا
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+               <!-- Swiper -->
+          <div class="swiper mySwiper">
+
+
+            <!-- Swapper  -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide_heading">
+                  <h1 class="sm:text-2xl md:text-3xl lg:text-7xl
+                   font-bold text-white animate__animated 
+                   animate__backInUp animate__delay-0.3s
+                    animate__infinite">خامات مميزة</h1>
+                  <a
+                  class="group relative inline-block focus:outline-none focus:ring"
+                  href="/"
+                >
+                  <span
+                    class="mt-10 absolute inset-0 translate-x-0 translate-y-0 bg-yellow-300 transition-transform group-hover:translate-y-1.5 group-hover:translate-x-1.5"
+                  ></span>
+                
+                  <span
+                    class="mt-10 relative inline-block border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest"
+                  >
+                    تواصل معنا
+                  </span>
+                </a></div>
+                <img src="./assets/slides/slider_1.jpg" alt="Slide 1"/>
+              
+              
+              </div>
+              <div class="swiper-slide">
+                <div class="slide_heading">
+                  <h1 class="sm:text-2xl md:text-3xl lg:text-7xl
+                   font-bold text-white animate__animated
+                    animate__backInUp animate__delay-0.3s
+                      animate__infinite 
+                     ">تصميم مميز للأخشاب</h1>
+                  <a
+                  class="group relative inline-block focus:outline-none focus:ring"
+                  href="/"
+                >
+                  <span
+                    class="mt-10 absolute inset-0 translate-x-0 translate-y-0 bg-yellow-300 transition-transform group-hover:translate-y-1.5 group-hover:translate-x-1.5"
+                  ></span>
+                
+                  <span
+                    class="mt-10 relative inline-block border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest"
+                  >
+                    تواصل معنا
+                  </span>
+                </a></div>
+                <img src="./assets/slides/slider_2.jpg" alt="Slide 2"/>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide_heading">
+                  <h1 class="sm:text-2xl md:text-3xl lg:text-7xl
+                   font-bold text-white animate__animated
+                    animate__backInUp animate__delay-0.3s
+                      animate__infinite 
+                     "> أيدي ماهرة</h1>
+                  <a
+                  class="group relative inline-block focus:outline-none focus:ring " href="/"
+                >
+                  <span
+                    class="animate__animated
+                    __swing animate__delay-0.3s
+                      animate__infinite mt-10 absolute inset-0 translate-x-0 translate-y-0 bg-yellow-300 transition-transform group-hover:translate-y-1.5 group-hover:translate-x-1.5"
+                  ></span>
+                
+                  <span
+                    class="animate__animated
+                    __swing animate__delay-0.3s
+                      animate__infinite mt-10 relative inline-block border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest"
+                  >
+                    تواصل معنا
+                  </span>
+                </a></div>
+                <img src="./assets/slides/slider_3.jpg" alt="Slide 3"/>
+              </div>
+      
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+    </header>
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="/app.js"></script>
+
+
+  </body>
+</html>
