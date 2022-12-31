@@ -18,12 +18,26 @@ nav ul li a {
   font-family: 'Tajawal', sans-serif;
   color: #fff;
 }
+.mobile_number_info {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5px;
+
+}
+.mobile_number_info img {
+  width: 12px;
+  height: 12px;
+}
+.mobile_number_info p {
+  font-weight: bold;
+}
 .main_logo {
   width: 65px;
   height: 65px;
 }
 header {
-  background: transparent;
+  background: #fff;
   position: absolute;
   top: 0;
   left: 0;
@@ -112,7 +126,13 @@ header {
   height: auto;
   object-fit: cover;
 }
-
+.social_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex:1;
+}
 /* Swiper End  */
 .wrapper {
   position: relative;
@@ -125,3 +145,19 @@ header {
 }
 
 
+/* Gallery  */
+.gallery_section img {
+  height: 300px;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  width: 100%;
+  display: block;
+}
+.gallery_section .show_more_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+}

@@ -1,3 +1,5 @@
+import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe/dist/photoswipe-lightbox.esm.js';
+
 var swiper = new Swiper('.mySwiper', {
   pagination: {
     el: '.swiper-pagination',
@@ -12,3 +14,10 @@ var swiper = new Swiper('.mySwiper', {
     delay: 3000,
   },
 });
+
+const lightbox = new PhotoSwipeLightbox({
+  gallery: '#gallery--getting-started',
+  children: 'a',
+  pswpModule: () => import('./photoswipe.esm.js'),
+});
+lightbox.init();
