@@ -36,6 +36,12 @@ nav ul li a {
   width: 65px;
   height: 65px;
 }
+@media only screen and (max-width: 922px) {
+  .main_logo {
+    width: 40px;
+    height: 40px;
+  }
+} 
 header {
   background: #fff;
   position: absolute;
@@ -133,6 +139,24 @@ header {
   position: relative;
   flex:1;
 }
+.social_icons_wrapper {
+
+  width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      
+}
+.social_icons_wrapper a {
+  display: flex;
+  justify-content: center;
+align-items: center;
+}
+.social_icons a img{ 
+  width: 40px;
+  height: 40px;
+}
 /* Swiper End  */
 .wrapper {
   position: relative;
@@ -160,4 +184,53 @@ header {
   margin-top: 2rem;
   margin-bottom: 2rem;
 
+}
+
+
+/* About Us  */
+
+
+section.aboutUs .image_wrapper img {
+    border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+/* width: 150px; */
+}
+section.aboutUs_content p{
+  direction: rtl;
+}
+.aboutUs_content_heading {
+  position: relative;
+}
+.aboutUs_content_heading::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: 0px;
+  width: 100%;
+  height: 14px;
+  background: rgba(238,111,87,0.5);
+  z-index: -1;
+}
+.short_intro {
+  direction: rtl;
+}
+
+
+
+
+
+
+
+
+/* Google Maps  */
+#map {
+  width: 100%; /* The width is the width of the web page */
+  margin-bottom: 20px;
+}
+#map iframe {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  vertical-align: top;
 }
