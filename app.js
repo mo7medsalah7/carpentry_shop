@@ -21,3 +21,10 @@ const lightbox = new PhotoSwipeLightbox({
   pswpModule: () => import('./photoswipe.esm.js'),
 });
 lightbox.init();
+
+const whatsapp_link = document.querySelector('.whatsapp_popup');
+const whatsapp_chat_box = document.querySelector('.whatsapp_chat_box');
+
+whatsapp_link.addEventListener('click', function () {
+  whatsapp_chat_box.classList.toggle('opacityChanger');
+});
