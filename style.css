@@ -330,13 +330,14 @@ section.aboutUs_content p{
 }
 
 .opacityChanger {
-  opacity: 1;
+
+  opacity: 1 !important;
+  visibility: visible;
 }
 
 
 .whatsapp_chat_box {
   opacity: 0;
-
   border-radius: 5px 5px 8px 8px;
   -webkit-border-radius: 5px 5px 8px 8px;
   -moz-border-radius: 5px 5px 8px 8px;
