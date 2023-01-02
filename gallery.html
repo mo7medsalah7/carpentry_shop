@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <link>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Gallery  -->
+    <link type="text/css" rel="stylesheet" href="./photoswipe.css" />
+
+    <!-- Animate CSS  -->
+    <link
+    rel="stylesheet"
+    href="./animate.min.css"
+  />
+    <!-- Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- // adding some custom CSS -->
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css"> </link>
+<title>الدمياطي للديكور الخشبي | معرض الصور</title>
+  </head>
+  <body>
+    <main>
+
+      <header aria-label="Site Header" class="">
+        <div
+          class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8"
+        >
+          <a class="block text-teal-600" href="/">
+            <span class="sr-only">Home</span>
+            <a class="flex title-font font-medium items-center text-gray-900 md:mb-0">
+              <img src="./assets/logo.png" alt="logo.png" class="main_logo">
+              <span class="ml-3 text-xl font-bold	text-[#000]">الدمياطي</span>
+            </a>
+     
+          </a>
+      
+          <div class="flex flex-1 items-center justify-end md:justify-between">
+            <nav aria-label="Site Nav" class="hidden md:block">
+              <ul class="flex items-center gap-6 text-sm">
+                <li>
+                  <a class="text-[#000] transition hover:text-[#e57e25]" href="/">
+                    الرئيسية
+                  </a>
+                </li>
+      
+                <li>
+                  <a class="text-[#000] transition hover:text-[#e57e25]" href="/gallery.html">
+                  الخدمات
+                  </a>
+                </li>
+      
+                <li>
+                  <a class="text-[#000] transition hover:text-[#e57e25]" href="/">
+                    المميزات
+                  </a>
+                </li>
+      
+                <li>
+                  <a class="text-[#000] transition hover:text-[#e57e25]" href="/about.html">
+                    من نحن
+                  </a>
+                </li>
+      
+               
+              </ul>
+            </nav>
+
+            <div class="mobile_number_info">
+              <p>9660568839984+</p>
+              <img src="./assets/icons/call.png" alt="call_icon" />
+            </div>
+      
+            <div class="hidden md:flex items-center gap-4 mr-4">
+
+      
+              <button
+                class="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden"
+              >
+                <span class="sr-only">Toggle menu</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+
+        <!-- Gallery  -->
+
+
+        <div class="gallery_section container px-5 py-2 mx-auto lg:pt-24 lg:px-32">
+          <div class="flex justify-content items-center text-center py-20">
+            <h1 class="text-xl lg:text-4xl font-bold ">معرض الصور</h1>
+          </div>
+          
+          <div class="flex flex-wrap -m-1 md:-m-2">
+            <div class="flex flex-wrap w-full lg:w-1/2">
+              <div class="w-full lg:w-1/2 p-1 md:p-2">
+                <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                  <a href="./assets/services/s1.jpeg" 
+                    data-pswp-width="1669" 
+                    data-pswp-height="2500" 
+                    target="_blank">
+                    <img src="./assets/services/s1.jpeg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="w-full lg:w-1/2 p-1 md:p-2">
+                <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                  <a href="./assets/services/s2.jpeg" 
+                    data-pswp-width="1669" 
+                    data-pswp-height="2500" 
+                    target="_blank">
+                    <img src="./assets/services/s2.jpeg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="w-full p-1 md:p-2">
+                <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                  <a href="./assets/services/s3.jpeg" 
+                    data-pswp-width="1669" 
+                    data-pswp-height="2500" 
+                    target="_blank">
+                    <img src="./assets/services/s3.jpeg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap w-full lg:w-1/2">
+              <div class="w-full p-1 md:p-2">
+                <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                  <a href="./assets/services/s7.jpeg" 
+                    data-pswp-width="1669" 
+                    data-pswp-height="2500" 
+                    target="_blank">
+                    <img src="./assets/services/s7.jpeg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="w-full lg:w-1/2 p-1 md:p-2">
+                <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                  <a href="./assets/services/s8.jpeg" 
+                    data-pswp-width="1669" 
+                    data-pswp-height="2500" 
+                    target="_blank">
+                    <img src="./assets/services/s8.jpeg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="w-full lg:w-1/2 p-1 md:p-2">
+                <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                  <a href="./assets/services/s9.jpeg" 
+                    data-pswp-width="1669" 
+                    data-pswp-height="2500" 
+                    target="_blank">
+                    <img src="./assets/services/s9.jpeg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap w-full lg:w-1/2">
+              <div class="w-full lg:w-1/2 p-1 md:p-2">
+                <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                  <a href="./assets/services/s7.jpeg" 
+                    data-pswp-width="1669" 
+                    data-pswp-height="2500" 
+                    target="_blank">
+                    <img src="./assets/services/s7.jpeg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="w-full lg:w-1/2 p-1 md:p-2">
+                <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                  <a href="./assets/services/s8.jpeg" 
+                    data-pswp-width="1669" 
+                    data-pswp-height="2500" 
+                    target="_blank">
+                    <img src="./assets/services/s8.jpeg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="w-full p-1 md:p-2">
+                <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                  <a href="./assets/services/s9.jpeg" 
+                    data-pswp-width="1669" 
+                    data-pswp-height="2500" 
+                    target="_blank">
+                    <img src="./assets/services/s9.jpeg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap w-full lg:w-1/2">
+              <div class="w-full p-1 md:p-2">
+                <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                  <a href="./assets/services/s10.jpeg" 
+                    data-pswp-width="1669" 
+                    data-pswp-height="2500" 
+                    target="_blank">
+                    <img src="./assets/services/s10.jpeg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="w-full lg:w-1/2 p-1 md:p-2">
+                <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                  <a href="./assets/services/s8.jpeg" 
+                    data-pswp-width="1669" 
+                    data-pswp-height="2500" 
+                    target="_blank">
+                    <img src="./assets/services/s8.jpeg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="w-full lg:w-1/2 p-1 md:p-2">
+                <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                  <a href="./assets/services/s11.jpeg" 
+                    data-pswp-width="1669" 
+                    data-pswp-height="2500" 
+                    target="_blank">
+                    <img src="./assets/services/s11.jpeg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap w-full lg:w-1/2">
+              <div class="w-full lg:w-1/2 p-1 md:p-2">
+                <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                  <a href="./assets/services/s11.jpeg" 
+                    data-pswp-width="1669" 
+                    data-pswp-height="2500" 
+                    target="_blank">
+                    <img src="./assets/services/s11.jpeg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="w-full lg:w-1/2 p-1 md:p-2">
+                <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                  <a href="./assets/services/s12.jpeg" 
+                    data-pswp-width="1669" 
+                    data-pswp-height="2500" 
+                    target="_blank">
+                    <img src="./assets/services/s12.jpeg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="w-full p-1 md:p-2">
+                <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                  <a href="./assets/services/s13.jpeg" 
+                    data-pswp-width="1669" 
+                    data-pswp-height="2500" 
+                    target="_blank">
+                    <img src="./assets/services/s13.jpeg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap w-full lg:w-1/2">
+              <div class="w-full p-1 md:p-2">
+                <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                  <a href="./assets/services/s14.jpeg" 
+                    data-pswp-width="1669" 
+                    data-pswp-height="2500" 
+                    target="_blank">
+                    <img src="./assets/services/s14.jpeg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="w-full lg:w-1/2 p-1 md:p-2">
+                <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                  <a href="./assets/services/s15.jpeg" 
+                    data-pswp-width="1669" 
+                    data-pswp-height="2500" 
+                    target="_blank">
+                    <img src="./assets/services/s15.jpeg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="w-full lg:w-1/2 p-1 md:p-2">
+                <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                  <a href="./assets/services/s16.jpeg" 
+                    data-pswp-width="1669" 
+                    data-pswp-height="2500" 
+                    target="_blank">
+                    <img src="./assets/services/s16.jpeg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+
+          
+        
+          </div>
+
+
+        </div>
+
+
+    <!-- Google Maps  -->    
+    <div id="map">
+      <div class="container px-5 py-2 mx-auto lg:pt-24 lg:px-32 flex justify-content items-center text-center py-20">
+        <h1 class="text-xl lg:text-4xl font-bold "> الموقع على الخريطة</h1>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.9854488965952!2d46.749192215001635!3d24.795951784084465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf5b1fa5fc97f05b2!2zMjTCsDQ3JzQ1LjQiTiA0NsKwNDUnMDUuMCJF!5e0!3m2!1sen!2seg!4v1672525211957!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer  -->
+    <footer>
+
+
+      <div class="bg-gray-100">
+        <div class="container flex justify-center items-center mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+          <p class="text-gray-500 text-sm text-center sm:text-left">&copy;<script>document.write(new Date().getFullYear())</script> الدمياطي للديكور الخشبي         
+          </p>
+          <span class="inline-flex sm:mt-0 mt-2 justify-center sm:justify-start">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ending footer  -->
+
+    </main>
+
+
+      <!-- Gallery  -->
+  <script type="module"  src="./photoswipe.esm.js">
+  </script>
+  <script  type="module"  src="./photoswipe-lightbox.esm.min.js"></script>
+
+
+      <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="module" src="/app.js"></script>
+      </body>
