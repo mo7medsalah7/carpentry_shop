@@ -230,6 +230,7 @@ section.aboutUs_content p{
 #map {
   width: 100%; /* The width is the width of the web page */
   margin-bottom: 20px;
+  z-index: 10000000000000000000;
 }
 #map iframe {
   width: 100%;
